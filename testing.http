@@ -1,0 +1,27 @@
+GET  http://localhost:5000
+
+###
+
+GET http://localhost:5000/cases
+
+###
+
+GET http://localhost:5000/cases/28-08-2021
+
+###
+
+GET http://localhost:5000/casesdaily/
+
+###
+POST http://localhost:5000/cases
+content-type: application/json
+
+{
+    "infectedQuantity": 100,
+    "healedQuantity": 25
+}
+
+###
+
+DELETE http://localhost:5000/cases/612a3cf8b31d2859e4a0e7c8
+
